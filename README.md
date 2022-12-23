@@ -1,5 +1,6 @@
 # graal-native-bug-test
 ### simple project to reproduce a strange behaviour with MethodHandles for return types Long/Integer/Boolean using graal native
+(based on https://github.com/Nithanim/quarkus-native-bug-test)
 
 > prerequisites: GraalVM & native-image tool must be installed 
 
