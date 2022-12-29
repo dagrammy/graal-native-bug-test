@@ -5,7 +5,7 @@
 
 #### Compile classes
 ```sh
-javac BeanLong.java BeanInteger.java BeanString.java BeanBoolean.java MethodHandleTest.java MethodHandleTestAll.java
+javac SetterTest.java  BeanLong.java BeanInteger.java BeanString.java BeanBoolean.java MethodHandleTest.java MethodHandleTestAll.java
 ````
 
 #### Test using Long only
@@ -21,6 +21,8 @@ without MethodHandle
 got MethodHandle by unreflect
 >>>>> null <<<<<
 got MethodHandle by findVirtual
+>>>>> null <<<<<
+getDeclaredMethod and invoke on method
 >>>>> null <<<<<
 ```
 
@@ -41,6 +43,8 @@ got MethodHandle by unreflect
 >>>>> 0 <<<<<
 got MethodHandle by findVirtual
 >>>>> 0 <<<<<
+getDeclaredMethod and invoke on method
+>>>>> null <<<<<
 ```
 
 #### Test using Long, Integer, Boolean and String

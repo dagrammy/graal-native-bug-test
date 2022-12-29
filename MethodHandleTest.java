@@ -1,3 +1,4 @@
+import java.beans.PropertyDescriptor;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
@@ -26,6 +27,11 @@ public class MethodHandleTest {
     // Call to MH returns 0 instead of null
     Long anotherOut = (Long) anotherMh.invoke(bean);
     System.out.println(">>>>> " + anotherOut + " <<<<<");
+
+    System.out.println("getDeclaredMethod and invoke on method");
+    Method getValue = beanClass.getDeclaredMethod("getValue");
+    Long v = (Long) getValue.invoke(bean);
+    System.out.println(">>>>> " + v + " <<<<<");
   }
 
 }

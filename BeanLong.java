@@ -9,4 +9,7 @@ public class BeanLong {
     return value;
   }
 
+  public void setValue(Long value) {
+    this.value = value;
+  }
 }
